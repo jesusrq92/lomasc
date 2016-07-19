@@ -1,0 +1,347 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: black;
+}
+
+.anchoColumna{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.anchoRow{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.anchoContainer{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100% !important;
+}
+
+.titulo{
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 70%;
+	z-index: 1;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 100px;
+}
+
+.tituloDepa{
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 45%;
+	z-index: 1;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 100px;
+}
+
+.tituloInteresa{
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 42%;
+	z-index: 1;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 100px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+/*Estilos index proyectos*/
+
+#backSlider1{
+    background-image: url(../images/slide1.jpg);
+}
+
+#backSlider2{
+    background-image: url(../images/slide2.jpg);
+}
+
+#backSlider3{
+    background-image: url(../images/slide3.jpg);
+}
+
+#backSlider4{
+    background-image: url(../images/slide4.jpg);
+}
+
+#backSlider5{
+    background-image: url(../images/slide5.jpg);
+}
+
+#backSlider6{
+    background-image: url(../images/slide6.jpg);
+}
+
+#backSlider7{
+    background-image: url(../images/slide7.jpg);
+}
+
+#backSlider8{
+    background-image: url(../images/slide8.jpg);
+}
+
+#backSlider9{
+    background-image: url(../images/slide9.jpg);
+}
+
+#backSlider10{
+    background-image: url(../images/slide10.jpg);
+}
+
+#backSlider1, #backSlider2, #backSlider3, #backSlider4, #backSlider5, #backSlider6, #backSlider7, #backSlider8, #backSlider9, #backSlider10{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 92.1vh; /*height 100% viewport full*/
+}
+
+.carousel-inner img{
+    width: 100%;
+}
+
+/*botones*/
+.boton {
+    display: inline-block;
+    width: 150px;
+    height: 61px;
+    text-align: center;
+    color: white;
+    background-color: grey;
+    padding-top: 18px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.fa.fa-angle-left,.fa.fa-angle-right {
+	font-size: 18px;
+}
+
+.botones{
+	float: right;
+    margin-top: -4.37em;
+    position: relative;
+    background-color: grey;
+}
+
+/*footer*/
+
+footer{
+	background-color: black;
+	height: 70px;
+}
+
+#letrasFooter{
+	float: right;
+	color: white;
+	padding: 16px 18px 0px 0px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+#letrasFooter>a{
+	color: white;
+	text-decoration: none;
+}
+
+/*Interesa*/
+form{
+	width: 360px;
+	color: white;
+	margin: auto;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sel{
+	border-radius: 0px;
+}
+
+button{
+	float: right;
+	margin-top: 1em;
+	width: 180px;
+	border-radius: 0px !important;
+	font-family: 'Lato', sans-serif;
+}
+
+.fondoForm{
+	margin: auto;
+	background-color: black;
+	width: 550px;
+	height: 550px;
+}
+
+.sobreSlider{
+	margin-top: -43%;
+}
+
+
+
+
+/*Media Querys*/
+@media (max-width: 1600px) {
+	.titulo{
+	margin-left: 65%;
+	}	
+	.tituloDepa{
+	margin-left: 35%;
+	}
+	.tituloInteresa{
+	margin-left: 42%;
+	}	
+
+}
+
+@media (max-width: 1500px) {
+	.titulo{
+	margin-left: 60%;
+	}	
+	.tituloDepa{
+	margin-left: 30%;
+	}
+	.tituloInteresa{
+	margin-left: 42%;
+	}
+}
+
+@media (max-width: 1400px) {
+	.titulo{
+	margin-left: 57%;
+	}	
+	.tituloDepa{
+	margin-left: 25%;
+	}
+	.tituloInteresa{
+	margin-left: 42%;
+	}
+}
+
+@media (max-width: 1300px) {
+	.titulo{
+	margin-left: 52%;
+	}	
+	.tituloDepa{
+	margin-left: 40%;
+	font-size: 80px;
+	}	
+	.tituloInteresa{
+	margin-left: 30%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.titulo{
+	margin-left: 48%;
+	}	
+	.tituloDepa{
+	margin-left: 40%;
+	font-size: 70px;
+	}
+	.tituloInteresa{
+	margin-left: 30%;
+	}	
+}
+
+@media (max-width: 1100px) {
+	.titulo{
+	margin-left: 53%;
+	font-size: 80px;
+	}	
+	.tituloDepa{
+	margin-left: 40%;
+	font-size: 65px;
+	}
+	.tituloInteresa{
+	margin-left: 27%;
+	font-size: 80px;
+	}
+}
+
+@media (max-width: 950px) {
+	.titulo{
+	margin-left: 56%;
+	font-size: 70px;
+	}	
+	.tituloDepa{
+	margin-left: 32%;
+	font-size: 60px;
+	}
+	.tituloInteresa{
+	margin-left: 36%;
+	font-size: 70px;
+	}
+}
+
+@media (max-width: 870px) {
+	.titulo{
+	margin-left: 47%;
+	font-size: 70px;
+	}	
+	.tituloDepa{
+	margin-left: 28%;
+	font-size: 60px;
+	}
+	.tituloInteresa{
+	margin-left: 47%;
+	font-size: 36px;
+	}
+}
+
+@media (max-width: 768px) {
+	.titulo{
+	margin-left: 60%;
+	font-size: 40px;
+	}
+	.tituloDepa{
+	margin-left: 42%;
+	font-size: 40px;
+	}	
+	.tituloInteresa{
+	margin-left: 53%;
+	font-size: 40px;
+	}
+}
+
+@media (max-width: 588px) {
+	.titulo{
+	margin-left: 55%;
+	font-size: 30px;
+	}	
+	.tituloDepa{
+	margin-left: 40%;
+	font-size: 25px;
+	}	
+	.tituloInteresa{
+	margin-left: 45%;
+	font-size: 30px;
+	}	
+}
+
+
+
+
+
+
+
+
