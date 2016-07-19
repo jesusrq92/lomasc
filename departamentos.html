@@ -5,21 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lomas de la Castañeda</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
-
     <!-- Font-awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
-
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300italic,900italic,300,100italic,100' rel='stylesheet' type='text/css'>
+    <style>
+      /*FOOTER*/
+      footer{
+            height: 81px;
+      }
+      #departamentos{
+        background: #fff;
+      }
+      #edificios-wrapper{
+         height: 92.1vh;
+      }
+      #edificios{
+        width: 800px;
+        height: 600px;
+        background: url(images/edificios.png) bottom left no-repeat;
+            position: absolute;
+            top: 240px;
+            right: 2%;
+      }
+      .titulo-torre{
+        position: absolute;
+        width: 180px;
+      }
+      .titulo-torre h3{margin-top: 0}
+      .t1{right: 153px;}
+      .t2{right: 364px;}
+      .t3{right: 578px;}
+      
+      #disponibles{
+        width: 200px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 310px;
+        right: 60%;
+        font-size: 18px;
+      }
+      #disponibles p:first-child{
+        margin-bottom: 100px;
+
+      }
+      .disponible{
+        background: #4b78a1;
+        width: 165px;
+        height: 27px;
+        opacity: 1;
+        margin:0 auto;
+      }
+      .depto{
+        position: absolute;
+        background: #4b78a1;
+        width: 165px;
+        height: 27px;
+        opacity: 0.75;
+        cursor: pointer;
+        transition: all ease 800ms;
+      }
+
+      .depto p{
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        line-height: 28px;
+      }
+
+      .depto:hover{
+        background: #000;
+        color: #fff;
+        opacity: 1;
+      }
+
+      .depto:hover p{
+        opacity: 1;
+      }
+  
+      .t3-d1300{top: 129px; left: 53px;}
+      .t3-d1200{top:162px;; left: 53px;}
+      .t3-d1100{top: 192px; left: 53px;}
+      .t3-d1000{top: 223px; left: 53px;}
+      .t3-d900{top: 254px; left: 53px;}
+      .t3-d800{top: 285px;left: 53px;}
+      .t3-d700{top: 315px;left: 53px;}
+      .t3-d600{top: 347px;left: 53px;}
+      .t3-d500{top: 377px;left: 53px;}
+      .t3-d400{top: 408px;left: 53px;}
+      .t3-d300{top: 439px;left: 53px;}
+      .t3-d200{top: 469px;left: 53px;}
+      .t3-d100{top: 500px;left: 53px;}
+
+      .t2-d1300{top: 129px; left: 265px;}
+      .t2-d1200{top:162px;; left: 265px;}
+      .t2-d1100{top: 192px; left: 265px;}
+      .t2-d1000{top: 223px; left: 265px;}
+      .t2-d900{top: 254px; left: 265px;}
+      .t2-d800{top: 285px;left: 265px;}
+      .t2-d700{top: 315px;left: 265px;}
+      .t2-d600{top: 347px;left: 265px;}
+      .t2-d500{top: 377px;left: 265px;}
+      .t2-d400{top: 408px;left: 265px;}
+      .t2-d300{top: 439px;left: 265px;}
+      .t2-d200{top: 469px;left: 265px;}
+      .t2-d100{top: 500px;left: 265px;}
+
+      .t1-d1300{top: 129px; left: 477px;}
+      .t1-d1200{top:162px;; left: 477px;}
+      .t1-d1100{top: 192px; left: 477px;}
+      .t1-d1000{top: 223px; left: 477px;}
+      .t1-d900{top: 254px; left: 477px;}
+      .t1-d800{top: 285px;left: 477px;}
+      .t1-d700{top: 315px;left: 477px;}
+      .t1-d600{top: 347px;left: 477px;}
+      .t1-d500{top: 377px;left: 477px;}
+      .t1-d400{top: 408px;left: 477px;}
+      .t1-d300{top: 439px;left: 477px;}
+      .t1-d200{top: 469px;left: 477px;}
+      .t1-d100{top: 500px;left: 477px;}
+    </style>
   </head>
-
-
-  <body>
-
+  <body id="departamentos">
   <section>
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 anchoColumna">
@@ -28,13 +139,78 @@
     </div>
   </section>
 
-  <section>
+  <section id="edificios-wrapper">
     <div class="container-fluid">
-      <div class="row">
+      <div id="disponibles">
+        <p>Selecciona el piso para <br>
+        ver departamento</p>
+        <p>Dispoinibles</p>
+        <div class="disponible"></div>
+      </div>
+      <div id="edificios">
+        <div class="titulo-torre t3">
+          <h3 class="text-center">Torre 3</h3>
+          <p class="text-center">14 Niveles <br>Fachada Sur</p>
+        </div>
+        <div class="titulo-torre t2">
+          <h3 class="text-center">Torre 2</h3>
+          <p class="text-center">14 Niveles <br>Fachada Sur</p>
+        </div>
+        <div class="titulo-torre t1">
+          <h3 class="text-center">Torre 1</h3>
+          <p class="text-center">13 Niveles <br>Fachada Sur</p>
+        </div>
+        
+        
+        
+        <div class="depto t3-d1300"><p>1310</p></div>
+        <!-- <div class="depto t3-d1200"><p>1210</p></div>
+        <div class="depto t3-d1100"><p>1110</p></div>
+        <div class="depto t3-d1000"><p>1010</p></div>
+        <div class="depto t3-d900"><p>910</p></div>
+        <div class="depto t3-d800"><p>810</p></div> -->
+        <div class="depto t3-d700"><p>710</p></div>
+        <div class="depto t3-d600"><p>610</p></div>
+        <!-- <div class="depto t3-d500"><p>510</p></div> -->
+        <div class="depto t3-d400"><p>410</p></div>
+        <!-- <div class="depto t3-d300"><p>310</p></div> -->
+        <div class="depto t3-d200"><p>210</p></div>
+        <div class="depto t3-d100"><p>110</p></div>
+
+        <!-- <div class="depto t2-d1300"><p>1310</p></div>
+        <div class="depto t2-d1200"><p>1210</p></div>
+        <div class="depto t2-d1100"><p>1110</p></div>
+        <div class="depto t2-d1000"><p>1010</p></div>
+        <div class="depto t2-d900"><p>910</p></div> -->
+        <div class="depto t2-d800"><p>810</p></div>
+        <div class="depto t2-d700"><p>710</p></div>
+        <!-- <div class="depto t2-d600"><p>610</p></div> -->
+        <div class="depto t2-d500"><p>510</p></div>
+        <!-- <div class="depto t2-d400"><p>410</p></div> -->
+        <div class="depto t2-d300"><p>310</p></div>
+        <div class="depto t2-d200"><p>210</p></div>
+        <!-- <div class="depto t2-d100"><p>110</p></div> -->
+
+        <!-- <div class="depto t1-d1300"><p>1310</p></div>
+        <div class="depto t1-d1200"><p>1210</p></div>
+        <div class="depto t1-d1100"><p>1110</p></div>
+        <div class="depto t1-d1000"><p>1010</p></div>
+        <div class="depto t1-d900"><p>910</p></div>
+        <div class="depto t1-d800"><p>810</p></div> -->
+        <div class="depto t1-d700"><p>710</p></div>
+        <div class="depto t1-d600"><p>610</p></div>
+        <div class="depto t1-d500"><p>510</p></div>
+        <!-- <div class="depto t1-d400"><p>410</p></div>
+        <div class="depto t1-d300"><p>310</p></div>
+        <div class="depto t1-d200"><p>210</p></div>
+        <div class="depto t1-d100"><p>110</p></div> -->
+
+
+      </div>
+
+      <!-- <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 anchoColumna">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-
-             <!-- Wrapper for slides -->
              <div class="carousel-inner" role="listbox">
                 <div class="item active">
                    <div id="backSlider5"></div>
@@ -43,7 +219,7 @@
 
             </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section> 
 
