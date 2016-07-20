@@ -7,6 +7,16 @@ body{
 	background-color: black;
 	font-family: 'Lato', sans-serif;
 }
+.infW{
+	background-color:black;
+	color:white;
+}
+
+#map {
+    width:850px;
+    height: 550px;
+    margin-left:400px;
+      }
 
 .anchoColumna{
 	padding-right: 0px;
