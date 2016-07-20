@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
     <title>Lomas de la Castañeda</title>
 
     <!-- Bootstrap -->
@@ -20,6 +21,39 @@
 
   <body>
 
+
+<div class="enableNavMovil">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <div id="nav-icon3">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">PROYECTO</a></li>
+          <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
+          <li><a href="ubicacion.html">UBICACIÓN</a></li>
+          <li><a href="interiores.html">INTERIORES</a></li>
+          <li><a href="amenities.html">AMENITIES</a></li>
+          <li><a href="interesa.html">ME INTERESA</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
+
+
   <section>
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 anchoColumna">
@@ -27,6 +61,47 @@
       </div>
     </div>
   </section>
+
+
+  <nav id="side-nav">
+    <div id="logo">
+        <a href="index.html"><img src="images/logoNav.png" class="acomodoNav" alt=""></a>
+    </div>
+    <ul id="menu">
+        <div class="row">
+          <div class="col-sm-6"><a class="linksNav" href="index.html">PROYECTO</a></div>
+          <div class="col-sm-6"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"><a class="linksNav" href="departamentos.html">DEPARTAMENTOS</a></div>
+          <div class="col-sm-6"><i class="fa fa-home" aria-hidden="true"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"><a class="linksNav" href="ubicacion.html">UBICACIÓN</a></div>
+          <div class="col-sm-6"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"><a class="linksNav" href="interiores.html">INTERIORES</a></div>
+          <div class="col-sm-6"><img class="imgNotFont" src="images/sofa.png" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"><a class="linksNav" href="amenities.html">AMENITIES</a></div>
+          <div class="col-sm-6"><img class="imgNotFont" src="images/pesa.png" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6"><a class="linksNav" href="interesa.html">ME INTERESA</a></div>
+          <div class="col-sm-6"><i class="fa fa-star" aria-hidden="true"></i></div>
+        </div>
+    </ul>
+    <div id="menu-footer">
+        <p><i class="fa fa-phone" aria-hidden="true"></i> (+52) 55 5280 5333<br>
+           <i class="fa fa-phone" aria-hidden="true"></i> (+52) 55 5294 4504<br>
+           <i class="fa fa-phone" aria-hidden="true"></i> (+52) 55 5294 4505</p>
+        <p>info@lomasdelacanada.com</p>
+        <img id="punto" src="images/logoPieNav.png" class="acomodoPie" alt="">
+    </div>
+</nav>
+
 
   <section>
     <div class="container-fluid">
@@ -69,5 +144,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#nav-icon3').click(function(){
+          $(this).toggleClass('open');
+          });
+        });
+    </script>
   </body>
 </html>
