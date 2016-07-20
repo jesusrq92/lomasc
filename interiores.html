@@ -41,11 +41,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">PROYECTO</a></li>
-          <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
-          <li><a href="ubicacion.html">UBICACIÓN</a></li>
-          <li><a href="interiores.html">INTERIORES</a></li>
-          <li><a href="amenities.html">AMENITIES</a></li>
+          <li><a href="index.html" class="sub">PROYECTO</a></li>
+          <li><a href="departamentos.html" class="sub">DEPARTAMENTOS</a></li>
+          <li><a href="ubicacion.html" class="sub">UBICACIÓN</a></li>
+          <li><a href="interiores.html" class="sub"><strong>INTERIORES</strong></a></li>
+          <li><a href="amenities.html" class="sub">AMENITIES</a></li>
           <li><a href="interesa.html">ME INTERESA</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -63,7 +63,8 @@
   </section>
 
 
-  <nav id="side-nav">
+  <div id="mySidenav" class="sidenav">
+
     <div id="logo">
         <a href="index.html"><img src="images/logoNav.png" class="acomodoNav" alt=""></a>
     </div>
@@ -81,7 +82,7 @@
           <div class="col-sm-6"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
         </div>
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav" href="interiores.html">INTERIORES</a></div>
+          <div class="col-sm-6"><a class="linksNav sub" href="interiores.html">INTERIORES</a></div>
           <div class="col-sm-6"><img class="imgNotFont" src="images/sofa.png" alt=""></div>
         </div>
         <div class="row">
@@ -100,7 +101,8 @@
         <p>info@lomasdelacanada.com</p>
         <img id="punto" src="images/logoPieNav.png" class="acomodoPie" alt="">
     </div>
-  </nav>
+  
+</div>
 
 
   <section>
@@ -112,10 +114,35 @@
              <!-- Wrapper for slides -->
              <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                   <div id="backSlider6"></div>
+                   <div id="backSlider6">
+                      <div class="black-square">
+                          <p id="number">03.</p>
+                          <h2>LOMAS DE LA CAÑADA</h2>
+                          <br>
+                          <p class="hyphen"><strong>_</strong></p>
+                           
+                          <p class="boxText">Cada departamento se entrega en obra gris, con el objetivo de permitir a cada cliente personalizar su espacio.</p>
+                            
+                          <p class="boxText">GRUPO PUNTO cuenta con paquetes de acabados según tus necesidades que te permitirán disfrutar al máximo de tu espacio.</p>
+                      </div>
+                      <div class="quoteLarge">
+                          <p class="boxText">“El mundo está lleno de pequeñas alegrías, el arte consiste en saber distinguirlas.”</p>
+                      </div>
+                   </div>
                 </div>
                 <div class="item">
-                   <div id="backSlider7"></div>
+                   <div id="backSlider7">
+                      <div class="black-square">
+                          <p id="number">03.</p>
+                          <h2>LOMAS DE LA CAÑADA</h2>
+                          <br>
+                          <p class="hyphen"><strong>_</strong></p>
+                           
+                          <p class="boxText">El método constructivo permite maximizar los espacios libres en cada planta.</p>
+                            
+                          <p class="boxText">Adapta tu departamento al tamaño de tu familia y a tus planes para el futuro.</p>
+                      </div>
+                   </div>
                 </div>
              </div>
 

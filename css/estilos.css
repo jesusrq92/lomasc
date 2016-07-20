@@ -67,7 +67,18 @@ body{
     width: 580px;
     padding: 20px;
     color: white;
-    bottom: 270px;
+    bottom: 135px;
+    font-size: 18px;
+    right: 0px;
+    background: rgba(0,0,0,0.75);
+}
+
+.quoteLarge {
+    position: absolute;
+    width: 678px;
+    padding: 20px;
+    color: white;
+    bottom: 135px;
     font-size: 18px;
     right: 0px;
     background: rgba(0,0,0,0.75);
@@ -78,7 +89,7 @@ body{
     width: 300px;
     padding: 20px 20px 90px;
     color: white;
-    bottom: 90px;
+    bottom: 0px;
     left: 350px;
     background: rgba(0,0,0,0.75);
 }
@@ -95,13 +106,24 @@ body{
     margin-bottom: 40px;
 }
 #number{
-	    position: absolute;
+	position: absolute;
     top: -177px;
     font-size: 161px;
     color: #000;
     font-weight: bold;
     letter-spacing: 4px;
 }
+
+.boxText{
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+}
+
+.slide4index{
+	padding-left: 17px;
+}
+
+
 
 /*Estilos index proyectos*/
 
@@ -261,7 +283,7 @@ body{
 
 #side-nav{
 	z-index: 1;
-	width:280px;
+	width:310px;
 	height:93vh !important;
 	position:absolute;
 	background: rgba(0,0,0,.8);
@@ -270,17 +292,30 @@ body{
 	color: white;
 }
 
-.acomodoNav{
-	margin-top: 2em;
-	margin-bottom: 5em;
-	margin-left: 5.5em;
+.acomodoNav {
+    margin-left: 23%;
+    margin-bottom: 17%;
+    margin-top: -18%;
 }
 
-.acomodoPie{
-	width: 130px;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	margin-left: 5em;
+.acomodoPie {
+    width: 120px;
+    margin-left: 28%;
+    margin-top: 8%;
+    margin-bottom: 1.5em;
+}
+
+.linksNav{
+	color: white;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+}
+
+.linksNav:hover{
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
 }
 
 .fa.fa-building-o, .fa.fa-home, .fa.fa-map-marker, .fa.fa-star, .imgNotFont{
@@ -288,6 +323,7 @@ body{
 	float: right;
 	margin-right: 1em;
 	margin-bottom: .6em;
+	color: white;
 }
 
 .fa-home{
@@ -302,25 +338,52 @@ body{
 	margin-right: .8em !important;
 }
 
-.linksNav{
-	color: white;
-	text-decoration: none;
-	margin-left: 1.7em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-}
-
-.linksNav:hover{
-	color: white;
-	text-decoration: none;
-	font-weight: 300;
-}
-
 #menu-footer>p{
-	margin-top: 2em;
+	margin-top: 8%;
 	margin-left: 1.7em;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
+	color: white;
+}
+
+.sub {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    font-weight: 300;
+}
+
+.sidenav {
+    height: 100%;
+    width: 310px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
 }
 
 /*nav movil*/
@@ -582,7 +645,7 @@ button{
 	.enableNavMovil{
 		display: initial;
 	}
-	#side-nav{
+	#mySidenav{
 		display: none;
 	}
 }
