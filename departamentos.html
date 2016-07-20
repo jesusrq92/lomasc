@@ -128,7 +128,55 @@
       .t1-d300{top: 439px;left: 477px;}
       .t1-d200{top: 469px;left: 477px;}
       .t1-d100{top: 500px;left: 477px;}
+
+      /* Modal */ 
+      a.button-modal {
+          color: black;
+          text-transform: uppercase;
+          font-size: 16px;
+      }
+      .disponible-button {
+          float: left;
+          font-weight: bold;
+      }
+      a.meinteresa {
+          
+          font-weight: 200;
+      }
+      img.img-modal {
+          display: block;
+          margin: 0 auto;
+      }
+      h4.modal-title.nombre-torre {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 900;
+      }
+      h5.modal-title.numero-depto {
+          text-align: center;
+          font-weight: 200;
+          font-size: 20px;
+      }
+      .close-modal{
+            float: right;
+            font-size: 31px;
+            position: fixed;
+            right: 20px;
+            top: 15px;
+
+      }
+      .modal-header{
+        border-bottom: 0px !important;
+      }
+      .modal-footer{
+        border-top: 0px !important;
+      }
+      .modal-backdrop
+      {
+          opacity:0.8 !important;
+      }
     </style>
+
   </head>
   <body id="departamentos">
   <section>
@@ -163,7 +211,7 @@
         
         
         
-        <div class="depto t3-d1300"><p>1310</p></div>
+        <div class="depto t3-d1300" data-toggle="modal" data-target="#deptomodal" ><p>1310</p></div>
         <!-- <div class="depto t3-d1200"><p>1210</p></div>
         <div class="depto t3-d1100"><p>1110</p></div>
         <div class="depto t3-d1000"><p>1010</p></div>
@@ -229,7 +277,27 @@
     </p>
   </footer>
 
-  
+  <div class="modal fade" id="deptomodal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fa fa-times close-modal" data-dismiss="modal" aria-hidden="true"></i>
+          <h4 class="modal-title nombre-torre">Torre 1</h4>
+          <h5 class="modal-title numero-depto" >710</h5>
+        </div>
+        <div class="modal-body">
+          <img class="img-modal" src="images/depto-example.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="button-modal disponible-button">Disponible</a>
+          <a href="#" class="button-modal meinteresa">Me interesa <i class="fa fa-star" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
