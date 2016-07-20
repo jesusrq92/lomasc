@@ -500,11 +500,30 @@ button{
 	}	
 	.tituloDepa{
 	margin-left: 40%;
-	font-size: 80px;
+	font-size: 65px;
 	}	
 	.tituloInteresa{
 	margin-left: 30%;
 	}
+	#edificios {
+    width: 750px;
+    height: 555px;
+    background: url(images/edificios.png) bottom left no-repeat;
+    position: absolute;
+    background-size: contain;
+    top: 174px;
+    right: 2%;
+	}
+	#disponibles {
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 220px;
+    right: 61%;
+    font-size: 14px;
+	}
+
 }
 
 @media (max-width: 1200px) {
