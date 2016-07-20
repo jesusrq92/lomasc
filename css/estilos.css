@@ -5,6 +5,7 @@
 
 body{
 	background-color: black;
+	font-family: 'Lato', sans-serif;
 }
 
 .anchoColumna{
@@ -61,6 +62,46 @@ body{
     background-image: none
 }
 
+.quote {
+    position: absolute;
+    width: 580px;
+    padding: 20px;
+    color: white;
+    bottom: 270px;
+    font-size: 18px;
+    right: 0px;
+    background: rgba(0,0,0,0.75);
+}
+
+.black-square{
+	position: absolute;
+    width: 300px;
+    padding: 20px 20px 90px;
+    color: white;
+    bottom: 90px;
+    left: 350px;
+    background: rgba(0,0,0,0.75);
+}
+.black-square h2{
+	font-size: 22px;
+	margin-top: 10px;
+}
+.black-square p{
+	font-size: 16px;
+}
+.hyphen{
+	font-size: 50px !important;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+#number{
+	    position: absolute;
+    top: -177px;
+    font-size: 161px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
 
 /*Estilos index proyectos*/
 
