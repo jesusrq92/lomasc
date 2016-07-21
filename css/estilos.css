@@ -40,12 +40,12 @@ body{
 
 .titulo{
 	position: absolute;
-	margin-top: 5%;
+	margin-top: 2%;
 	margin-left: 70%;
 	z-index: 1;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 100px;
+	font-size: 70px;
 }
 
 .tituloDepa{
@@ -85,11 +85,11 @@ body{
 
 .quoteLarge {
     position: absolute;
-    width: 678px;
+    width: 550px;
     padding: 20px;
     color: white;
     bottom: 135px;
-    font-size: 18px;
+    font-size: 15px;
     right: 0px;
     background: rgba(0,0,0,0.75);
 }
@@ -117,8 +117,8 @@ body{
 }
 #number{
 	position: absolute;
-    top: -177px;
-    font-size: 161px;
+    top: -137px;
+    font-size: 125px;
     color: #000;
     font-weight: bold;
     letter-spacing: 4px;
@@ -179,7 +179,7 @@ body{
 
 #backSlider1, #backSlider2, #backSlider3, #backSlider4, #backSlider5, #backSlider6, #backSlider7, #backSlider8, #backSlider9, #backSlider10{
     background-size: cover;
-    background-position: center center;
+    background-position: right top;
     background-repeat: no-repeat;
     height: 92.1vh; /*height 100% viewport full*/
 }
