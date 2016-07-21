@@ -806,6 +806,17 @@ button{
     margin-right: 15%;
     margin-top: -4%;
 	}
+
+	.black-square {
+    display: initial;
+    position: absolute;
+    width: 100%;
+    padding: 20px 20px 90px;
+    color: white;
+    bottom: 124px;
+    left: 0px;
+    background: rgba(0,0,0,0.75);
+	}	
 }
 
 @media (max-width: 588px) {
