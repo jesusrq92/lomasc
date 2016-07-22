@@ -502,6 +502,19 @@ button{
     border-color: white;
 }
 
+.form-control{
+	transition: .3s;
+	font-family: 'Lato', sans-serif;
+}
+
+.form-control:focus {
+    border-color: white;
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
 .fondoForm{
 	margin: auto;
 	background-color: black;
@@ -811,11 +824,12 @@ button{
     display: initial;
     position: absolute;
     width: 100%;
-    padding: 20px 20px 90px;
+    padding: 0px 20px 4px;
     color: white;
     bottom: 124px;
     left: 0px;
     background: rgba(0,0,0,0.75);
+    color: white !important;
 	}	
 }
 
@@ -839,6 +853,46 @@ button{
     margin: auto;
 	}
 }
+
+@media (max-width: 370px) {
+	.titulo {
+    margin-left: 45%;
+    font-size: 28px;
+	}
+}
+
+@media (max-width: 400px) {
+	.tituloInteresa {
+    margin-left: 43%;
+    font-size: 26px;
+	}
+	form {
+    width: 260px;
+	}
+	.fondoForm {
+    width: 300px !important;
+	}
+	button {	
+    width: 120px;	
+	}
+}
+
+@media (max-width: 330px) {
+	.tituloInteresa {
+    margin-left: 36%;
+    font-size: 25px;
+	}
+	.fondoForm {
+    margin-top: -3%;
+	}
+}
+
+
+
+
+
+
+
 
 
 
