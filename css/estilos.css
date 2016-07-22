@@ -12,7 +12,9 @@ body{
 	color:white;
 }
 
-
+.hiddMov{
+	bottom: 0px !important;
+}
 
 .anchoColumna{
 	padding-right: 0px;
