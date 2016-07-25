@@ -124,7 +124,7 @@ body{
 
 .boxText{
 	font-family: 'Lato', sans-serif;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 .slide4index{
@@ -392,6 +392,11 @@ body{
     right: 25px;
     font-size: 36px !important;
     margin-left: 50px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 /*nav movil*/
