@@ -39,7 +39,17 @@ body{
 .titulo{
 	position: absolute;
 	margin-top: 2%;
-	margin-left: 70%;
+	margin-left: 43%;
+	z-index: 1;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 70px;
+}
+
+.tituloMapa{
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 93%;
 	z-index: 1;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -177,7 +187,7 @@ body{
 
 #backSlider1, #backSlider2, #backSlider3, #backSlider4, #backSlider5, #backSlider6, #backSlider7, #backSlider8, #backSlider9, #backSlider10{
     background-size: cover;
-    background-position: right top;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 92.1vh; /*height 100% viewport full*/
 }
@@ -538,9 +548,30 @@ button{
 }
 
 /*Media Querys*/
+
+@media (max-width: 1770px) {
+	.tituloMapa{
+	margin-left: 91%;
+	}
+	
+}
+
+@media (max-width: 1700px) {
+	.tituloMapa{
+	margin-left: 89%;
+	}
+}
+
+@media (max-width: 1650px) {
+	.tituloMapa{
+	margin-left: 87%;
+	}
+}
+
+
 @media (max-width: 1600px) {
 	.titulo{
-	margin-left: 65%;
+	margin-left: 43%;
 	}	
 	.tituloDepa{
 	margin-left: 35%;
@@ -551,10 +582,14 @@ button{
 
 }
 
-@media (max-width: 1500px) {
-	.titulo{
-	margin-left: 60%;
-	}	
+@media (max-width: 1580px) {
+	.tituloMapa {
+    margin-left: 88%;
+    font-size: 57px;
+	}
+}
+
+@media (max-width: 1500px) {	
 	.tituloDepa{
 	margin-left: 30%;
 	}
@@ -589,10 +624,21 @@ button{
 
 }
 
-@media (max-width: 1400px) {
-	.titulo{
-	margin-left: 57%;
-	}	
+@media (max-width: 1490px) {
+	.tituloMapa {
+    margin-left: 86%;
+    font-size: 57px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.tituloMapa {
+    margin-left: 83%;
+    font-size: 56px;
+}
+}
+
+@media (max-width: 1400px) {	
 	.tituloDepa{
 	margin-left: 25%;
 	}
@@ -613,10 +659,14 @@ button{
 	}
 }
 
-@media (max-width: 1300px) {
-	.titulo{
-	margin-left: 52%;
-	}	
+@media (max-width: 1355px) {
+	.tituloMapa {
+    margin-left: 80%;
+    font-size: 56px;
+}
+}
+
+@media (max-width: 1300px) {	
 	.tituloDepa{
 	margin-left: 40%;
 	font-size: 65px;
@@ -672,10 +722,18 @@ button{
 	}
 }
 
+@media (max-width: 1285px) {
+	.tituloMapa {
+    margin-left: 79%;
+    font-size: 50px;
+}
+}
+
 @media (max-width: 1200px) {
-	.titulo{
-	margin-left: 48%;
-	}	
+	.tituloMapa {
+    margin-left: 83%;
+    font-size: 48px;
+	}
 	.tituloDepa{
 	margin-left: 40%;
 	font-size: 70px;
@@ -711,10 +769,16 @@ button{
 	}
 }
 
+@media (max-width: 1130px) {
+	.tituloMapa {
+    margin-left: 82%;
+    font-size: 42px;
+	}
+}
+
 @media (max-width: 1100px) {
 	.titulo{
-	margin-left: 53%;
-	font-size: 80px;
+	font-size: 70px;
 	}	
 	.tituloDepa{
 	margin-left: 40%;
@@ -729,6 +793,13 @@ button{
 	}
 	.quoteLarge {
     display: none;
+	}
+}
+
+@media (max-width: 1060px) {
+	.tituloMapa {
+    margin-left: 80%;
+    font-size: 40px;
 	}
 }
 
@@ -749,9 +820,19 @@ button{
 	} 
 }
 
+@media (max-width: 991px) {
+	.tituloMapa {
+    margin-left: 86%;
+    font-size: 40px;
+	}
+}
+
 @media (max-width: 950px) {
+	.tituloMapa {
+    margin-left: 84%;
+    font-size: 37px;
+	}
 	.titulo{
-	margin-left: 56%;
 	font-size: 70px;
 	}	
 	.tituloDepa{
@@ -766,7 +847,6 @@ button{
 
 @media (max-width: 870px) {
 	.titulo{
-	margin-left: 47%;
 	font-size: 70px;
 	}	
 	.tituloDepa{
@@ -780,6 +860,12 @@ button{
 	.fondoForm {
     margin-right: 40px;
     margin-top: -4%;
+	}
+}
+
+@media (max-width: 885px) {
+	.tituloMapa {
+    display: none;
 	}
 }
 
