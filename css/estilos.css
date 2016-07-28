@@ -56,14 +56,14 @@ body{
 	font-size: 70px;
 }
 
-.tituloDepa{
-	position: absolute;
-	margin-top: 5%;
-	margin-left: 45%;
-	z-index: 1;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 100px;
+.tituloDepa {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 56%;
+    z-index: 1;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 75px;
 }
 
 .tituloInteresa{
@@ -312,15 +312,16 @@ body{
 
 .acomodoNav {
     margin-left: 23%;
-    margin-bottom: 17%;
+    margin-bottom: 12%;
     margin-top: -18%;
 }
 
 .acomodoPie {
-    width: 120px;
-    margin-left: 28%;
-    margin-top: 8%;
-    margin-bottom: 1.5em;
+    float: left;
+    width: 165px;
+    margin-top: 0px;
+    margin-left: 69px;
+    padding-bottom: 2em;
 }
 
 .linksNav{
@@ -480,6 +481,46 @@ footer{
 	text-decoration: none;
 }
 
+#letrasFooterTels{
+	text-align: right;
+	float: right;
+	color: white;
+	padding: 16px 18px 0px 0px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+#letrasFooterTels>a{
+	color: white;
+	text-decoration: none;
+}
+
+#letrasFooterStreet{
+	margin-left: 330px;
+	text-align: left;
+	float: left;
+	color: white;
+	padding: 16px 18px 0px 0px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+
+.letraHaus{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.lineaFooter{
+	float: right;
+    height: 35px;
+    padding-top: 2px;
+    padding-left: 13px;
+}
+
 /*Interesa*/
 form{
 	width: 360px;
@@ -547,6 +588,33 @@ button{
     z-index: 1;
 }
 
+/*Contenedor disponibles departamentos*/
+table {
+    background-color: transparent;
+    float: right;
+    margin-right: 21%;
+    margin-top: -2%;
+}
+
+.disponible{
+    background: #4b78a1;
+    width: 165px;
+    height: 27px;
+    opacity: 1;
+    margin:0 auto;   
+}
+
+.letrasDispo{
+	font-weight: bold;
+	font-size: 18px;
+	padding-right: 12%;
+}
+
+.letrasBoxDispo{
+	font-weight: bold;
+	font-size: 18px;
+}
+
 /*Media Querys*/
 
 @media (max-width: 1770px) {
@@ -574,7 +642,8 @@ button{
 	margin-left: 43%;
 	}	
 	.tituloDepa{
-	margin-left: 35%;
+	margin-left: 64%;
+	font-size: 67px;
 	}
 	.tituloInteresa{
 	margin-left: 42%;
@@ -591,7 +660,8 @@ button{
 
 @media (max-width: 1500px) {	
 	.tituloDepa{
-	margin-left: 30%;
+	margin-left: 67%;
+	font-size: 58px;
 	}
 	.tituloInteresa{
 	margin-left: 42%;
@@ -621,7 +691,9 @@ button{
     width: 500px;
     height: 511px;
 	}
-
+	#edificios {
+    right: 7% !important;
+	}
 }
 
 @media (max-width: 1490px) {
@@ -639,8 +711,9 @@ button{
 }
 
 @media (max-width: 1400px) {	
-	.tituloDepa{
-	margin-left: 25%;
+	.tituloDepa {
+    margin-left: 63%;
+    font-size: 53px;
 	}
 	.tituloInteresa{
 	margin-left: 42%;
@@ -667,10 +740,6 @@ button{
 }
 
 @media (max-width: 1300px) {	
-	.tituloDepa{
-	margin-left: 40%;
-	font-size: 65px;
-	}	
 	.tituloInteresa{
 	margin-left: 30%;
 	}
@@ -680,8 +749,8 @@ button{
     background: url(images/edificios.png) bottom left no-repeat;
     position: absolute;
     background-size: contain;
-    top: 174px;
-    right: 2%;
+    top: 140px !important;
+    right: 2% !important;
 	}
 	#disponibles {
     width: 200px;
@@ -726,7 +795,10 @@ button{
 	.tituloMapa {
     margin-left: 79%;
     font-size: 50px;
-}
+	}
+	#letrasFooterStreet{
+		display: none;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -818,6 +890,10 @@ button{
     margin-right: 97px;
     height: 461px;
 	} 
+	#letrasFooterTels{
+		display: none;
+	}
+
 }
 
 @media (max-width: 991px) {
@@ -931,7 +1007,22 @@ button{
 	.hiddMov{
 		display: none;
 	}
+	#letrasFooterTels{
+		display: initial;
+		float: left;
+		text-align: left;
+		padding-left: 1em;
+	}
+	.lineaFooter{
+		display: none;
+	}
 
+}
+
+@media (max-width: 588px) {
+	#letrasFooterTels{
+		display: none;
+	}
 }
 
 @media (max-width: 588px) {
