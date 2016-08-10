@@ -1,4 +1,4 @@
-angular.module("lomasc", [])
+angular.module("lomasc", ['ImageZoom'])
 	.controller("deptosController", ["$scope", "$http", "$log", function($scope, $http, $log){
 
 		$scope.deptos = {
@@ -43,7 +43,7 @@ angular.module("lomasc", [])
 					{
 						"numero": "701",
 						"clase": "t1-d701",
-						"status": "disponible",
+						"status": "vendido",
 						"torre":"1"
 					},
 					{
@@ -113,7 +113,7 @@ angular.module("lomasc", [])
 					{
 						"numero": "1000",
 						"clase": "t2-d1000",
-						"status": "vendido",
+						"status": "disponible",
 						"torre":"2"
 					},
 					{
@@ -201,7 +201,7 @@ angular.module("lomasc", [])
 					{
 						"numero": "1000",
 						"clase": "t3-d1000",
-						"status": "apartado",
+						"status": "disponible",
 						"torre":"3"
 					},
 					{
@@ -243,7 +243,7 @@ angular.module("lomasc", [])
 					{
 						"numero": "301",
 						"clase": "t3-d301",
-						"status": "disponible",
+						"status": "vendido",
 						"torre":"3"
 					},
 					{

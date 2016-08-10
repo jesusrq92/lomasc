@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/icon.png" type="image/png">
-    <title>Lomas de la Castañeda</title>
+    <title>Lomas de la Cañada</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,16 +35,17 @@
               <span class="icon-bar"></span>
           </div>
         </button>
+          <a href="index.html"><img class="logoMovilh" src="images/logoNav.png" alt=""></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="index.html" class="sub">PROYECTO</a></li>
-          <li><a href="departamentos.html" class="sub">DEPARTAMENTOS</a></li>
-          <li><a href="ubicacion.html" class="sub">UBICACIÓN</a></li>
-          <li><a href="interiores.html" class="sub">INTERIORES</a></li>
-          <li><a href="amenities.html" class="sub"><strong>AMENITIES</strong></a></li>
+          <li><a href="index.html" class="subMovil">PROYECTO</a></li>
+          <li><a href="departamentos.html" class="subMovil">DEPARTAMENTOS</a></li>
+          <li><a href="ubicacion.html" class="subMovil">UBICACIÓN</a></li>
+          <li><a href="interiores.html" class="subMovil">INTERIORES</a></li>
+          <li><a href="amenities.html" class="subMovil"><strong>AMENITIES</strong></a></li>
           <li><a href="interesa.html">ME INTERESA</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -66,30 +67,42 @@
     <div id="logo">
         <a href="index.html"><img src="images/logoNav.png" class="acomodoNav" alt=""></a>
     </div>
-    <ul id="menu">
+    <div id="menu-footer">
+        <p><i class="fa fa-phone" aria-hidden="true"></i> (+52) 55 5280 5333<br>
+            <i class="fa fa-phone" aria-hidden="true"></i> (+52) 55 5294 4504<br>
+           <!-- <i class="fa fa-phone" aria-hidden="true"></i> (+52) 55 5294 4505<br> -->
+           ventas@gpopunto.com
+        </p>
+        <p>
+           Contabilidad No. 16 Bis,<br> 
+          Fraccionamiento Lomas Anáhuac,<br>
+          Huixquilucan, Estado de México.
+        </p>
+    </div>
+    <ul id="menu" style="margin-top:3em;">
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav" href="index.html">PROYECTO</a></div>
-          <div class="col-sm-6"><img class="imgNotFont" src="images/edificio.png" alt=""></i></div>
+          <div class="col-sm-4"><img class="imgNotFont" src="images/edificio.png" alt=""></i></div>
+          <div class="col-sm-8"><a class="linksNav" href="index.html">PROYECTO</a></div>
         </div>
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav" href="departamentos.html">DEPARTAMENTOS</a></div>
-          <div class="col-sm-6"><img class="imgNotFont" src="images/puerta.png" alt=""></i></div>
+          <div class="col-sm-4"><img class="imgNotFont" src="images/puerta.png" alt=""></i></div>
+          <div class="col-sm-8"><a class="linksNav" href="departamentos.html">DEPARTAMENTOS</a></div>
         </div>
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav" href="ubicacion.html">UBICACIÓN</a></div>
-          <div class="col-sm-6"><img class="imgNotFont" src="images/pin.png" alt=""></i></div>
+          <div class="col-sm-4"><img class="imgNotFont" src="images/pin.png" alt=""></i></div>
+          <div class="col-sm-8"><a class="linksNav" href="ubicacion.html">UBICACIÓN</a></div>
         </div>
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav" href="interiores.html">INTERIORES</a></div>
-          <div class="col-sm-6"><img class="imgNotFont" src="images/sofa.png" alt=""></div>
+          <div class="col-sm-4"><img class="imgNotFont" src="images/sofa.png" alt=""></div>
+          <div class="col-sm-8"><a class="linksNav" href="interiores.html">INTERIORES</a></div>
         </div>
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav sub" href="amenities.html">AMENITIES</a></div>
-          <div class="col-sm-6"><img class="imgNotFont" src="images/pesa.png" alt=""></div>
+          <div class="col-sm-4"><img class="imgNotFont" src="images/pesa.png" alt=""></div>
+          <div class="col-sm-8"><a class="linksNav sub" href="amenities.html">AMENITIES</a></div>
         </div>
         <div class="row">
-          <div class="col-sm-6"><a class="linksNav" href="interesa.html">ME INTERESA</a></div>
-          <div class="col-sm-6"><img class="imgNotFont" src="images/estrella.png" alt=""></i></div>
+          <div class="col-sm-4"><img class="imgNotFont" src="images/estrella.png" alt=""></i></div>
+          <div class="col-sm-8"><a class="linksNav" href="interesa.html">ME INTERESA</a></div>
         </div>
     </ul>
     <!-- <div id="menu-footer">
@@ -100,6 +113,13 @@
         <img id="punto" src="images/logoPieNav.png" class="acomodoPie" alt="">
     </div> -->
     <img src="images/logoPieNav.png" class="acomodoPie" alt="">
+    <!-- <div id="menu-footer">
+        <p style="margin-top:8em">
+          Fuente de Pirámides 16, Piso 10, Of. 1003<br>
+          Lomas de Tecamachalco, C.P. 53950,<br>
+          Naucalpan, Edo. Méx.
+        </p> 
+    </div> -->
   
 </div>
 
@@ -112,7 +132,23 @@
 
              <!-- Wrapper for slides -->
              <div class="carousel-inner" role="listbox">
-                <div class="item active">
+             <div class="item active">
+                   <div id="backSlider51">
+                        <div class="black-square">
+                            <!-- <p id="number">04.</p> -->
+                            <h2>LOMAS DE LA CAÑADA</h2>
+                            <br>
+                            <p class="hyphen"><strong>_</strong></p>
+                             
+
+                            <p class="boxText">La experiencia de vivir en LOMAS DE LA CAÑADA se complementa con un gimnasio, salón de usos múltiples, 
+                               580 metros cuadrados de jardín y seguridad de 24 horas.</p>
+                              
+                        </div>
+                        
+                   </div>
+                </div>
+                <div class="item">
                    <div id="backSlider8">
                         <div class="black-square">
                             <!-- <p id="number">04.</p> -->
@@ -121,30 +157,25 @@
                             <p class="hyphen"><strong>_</strong></p>
                              
 
-                            <p class="boxText">La experiencia de vivir en LOMAS DE LA CAÑADA se complementa con un gimnasio, salón de usos múltiples, 
-                               580 metros cuadrados de jardín y seguridad de 24 horas.</p>
+                           <!--  <p class="boxText">La experiencia de vivir en LOMAS DE LA CAÑADA se complementa con un gimnasio, salón de usos múltiples, 
+                               580 metros cuadrados de jardín y seguridad de 24 horas.</p> -->
                               
                             <p class="boxText">Espacios lujosos para disfrutar todas las actividades en la comodidad de su hogar.</p>
                         </div>
-                        <div class="quote">
+                        <!-- <div class="quote">
                             <p class="boxText">“La elegancia no consiste en ser notado, sino en ser recordado.”</p>
-                        </div>
+                        </div> -->
+                   </div>
+                </div>
+                <div class="item">
+                   <div id="backSlider52">
+                        
+                        
                    </div>
                 </div>
                 <div class="item">
                    <div id="backSlider9">
-                        <div class="black-square">
-                            <!-- <p id="number">04.</p> -->
-                            <h2>LOMAS DE LA CAÑADA</h2>
-                            <br>
-                            <p class="hyphen"><strong>_</strong></p>
-                             
-
-                            <p class="boxText">La experiencia de vivir en LOMAS DE LA CAÑADA se complementa con un gimnasio, salón de usos múltiples, 
-                               580 metros cuadrados de jardín y seguridad de 24 horas.</p>
-                              
-                            <p class="boxText">Espacios lujosos para disfrutar todas las actividades en la comodidad de su hogar.</p>
-                        </div>
+                       
                         <div class="quote">
                             <p class="boxText">“La elegancia no consiste en ser notado, sino en ser recordado.”</p>
                         </div>
@@ -169,20 +200,43 @@
   </div>
 
 
-  <footer>
-    <p id="letrasFooterStreet">Fuente de Pirámides 16, Piso 10, Of. 1003
-      <br>Lomas de Tecamachalco, C.P. 53950, Naucalpan, Edo. Méx.
-    </p>
+  <footer id="footerDesktop">
+  <p style="float:left; color:#FFF; margin-top:10px; margin-left:350px;">Fuente de Pirámides 16, Piso 10, Of. 1003<br>
+          Lomas de Tecamachalco, C.P. 53950,
+          Naucalpan, Edo. Méx.</p>
     <p id="letrasFooter">© 2016. All rights reserved 
       <br>Powered by <a target="_blank" href="http://concepthaus.mx"><span class="letraHaus">Concepthaus</span></a>
     </p>
-    <p id="letrasFooterTels">(+52) 55 5280 5333 &bull; 55 5294 4504 &bull; 55 5294 4505 
-      <img class="lineaFooter" src="images/linea.png" alt="">
-      <br><a href="mailto:info@lomasdelacanada.com">info@lomasdelacanada.com</a>
-      <br>
-    </p>
   </footer>
 
+  <footer id="footerNav">
+    <div class="menu-footer">
+        <center><img src="images/logoNav.png" alt="" style="margin-top:1em"></center>
+        <p>
+           <i class="fa fa-phone" aria-hidden="true"></i>(+52) 55 5280 5333 <br>
+           <i class="fa fa-phone" aria-hidden="true"></i>(+52) 55 5294 4504 <br>
+           <i class="fa fa-phone" aria-hidden="true"></i>(+52) 55 5294 4505 <br>
+           ventas@gpopunto.com
+        </p>
+        <p>
+          Contabilidad No. 16 Bis. Lote 16 A,<br>
+          Fraccionamiento Lomas Anáhuac,<br>
+          Huixquilucan, Estado de México.
+        </p>
+        <center><img src="images/lineFooter.png" alt="" style="margin-top:1em; width: 80%;"></center>
+        <center><img src="images/logoPieNav.png" alt="" style="margin-top:1em; width: 165px;"></center>
+        <div class="menu-footer">
+          <p style="padding-bottom:1em;">
+            Fuente de Pirámides 16, Piso 10, Of. 1003<br>
+            Lomas de Tecamachalco, C.P. 53950,<br>
+            Naucalpan, Edo. Méx.
+          </p>
+        </div>
+        <p style="float: inherit; background: #444444; padding-bottom: 10px;" id="letrasFooter">© 2016. All rights reserved 
+          <br>Powered by <a target="_blank" href="http://concepthaus.mx"><span class="letraHaus">Concepthaus</span></a>
+        </p>
+    </div>
+  </footer>
 
   
 
